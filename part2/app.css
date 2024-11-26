@@ -1,0 +1,23 @@
+/* Center and fix the button at the top */
+#button-container {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+
+/* Prevents overlap between button and cards */
+#card-display {
+  margin-top: 150px;
+  position: relative;
+  display: flex;
+  justify-content: center; 
+  align-items: flex-start; 
+  height: 400px; 
+}
+
+/* Styling for cards */
+#card-display img {
+  position: absolute; /* Stacks cards */
+}
